@@ -4,21 +4,29 @@ body {
   align-items: center;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
+  background-color: rgb(230, 230, 230);
 }
 
 .row {
   display: flex;
+  margin: 0 auto;
   flex-direction: row;
 }
 
 .tile {
   width: 13vmin;
   height: 13vmin;
-  border: 0.2px solid rgb(119, 119, 119);
+  border: 2px solid rgb(163, 163, 163);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  background-color: rgb(247, 247, 247);
+  cursor: pointer;
+}
+
+.tile:hover {
+  background-color: rgb(230, 230, 230);
 }
 
 .red {
