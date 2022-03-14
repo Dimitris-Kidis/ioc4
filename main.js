@@ -2,13 +2,11 @@ const tiles = document.getElementsByClassName('tile');
 const body = document.querySelector('body');
 var beep = new Audio('beep.mp3');
 
+const table = document.getElementById('table');
 const timeSpent = document.getElementById('time-spent');
 const averageTime = document.getElementById('average-time');
-const table = document.getElementById('table');
 
-console.log(timeSpent);
-console.log(averageTime);
-console.log(table);
+
 
 for(let i = 0; i < 7; i++) {
   body.innerHTML += `
@@ -74,6 +72,14 @@ function endFun() {
   // get seconds 
   var seconds = Math.round(timeDiff);
   console.log(seconds + " seconds");
+  console.log(table);
+
+
+  console.log(timeSpent);
+console.log(averageTime);
+console.log(table);
+
+  
   timeSpent.innerHTML = `${zeroPad((Math.floor(seconds/60)),2)}:${zeroPad((seconds%60),2)}`;
 
   let tmp=0;
@@ -90,8 +96,8 @@ function endFun() {
     </tr>
     `;
   }
-
   table.classList.remove('hidden');
+  
 }
 
 
@@ -158,6 +164,7 @@ function countAndCheck (tile) {
     counter++;
     console.log('черная', blackNumber);
     colorCheck = true;
+    endFun();
   }
   if ( blackNumber === 26 ) {
     end = true;

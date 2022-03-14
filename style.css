@@ -7,6 +7,10 @@ body {
   background-color: rgb(230, 230, 230);
 }
 
+.hidden {
+  display: none !important;
+}
+
 .row {
   display: flex;
   margin: 0 auto;
@@ -69,7 +73,3 @@ table {
   width: 95vmin;
 }
 /*  */
-
-.hidden {
-  display: none;
-}
