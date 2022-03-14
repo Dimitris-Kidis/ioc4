@@ -32,3 +32,44 @@ body {
 .red {
   color: rgb(187, 55, 55);
 }
+
+/* */
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+a.comment-indicator:hover + comment {
+  background: #ffd;
+  position: absolute;
+  display: block;
+  border: 1px solid black;
+  padding: 0.5em;
+}
+a.comment-indicator {
+  background: red;
+  display: inline-block;
+  border: 1px solid black;
+  width: 0.5em;
+  height: 0.5em;
+}
+comment {
+  display: none;
+}
+
+table {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 95vmin;
+}
+/*  */
+
+.hidden {
+  display: none;
+}
