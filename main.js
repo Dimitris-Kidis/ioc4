@@ -71,7 +71,8 @@ function endFun() {
   timeDiff /= 1000;
 
   // get seconds 
-  var seconds = Math.round(timeDiff);
+  // var seconds = Math.round(timeDiff); БЫЛО ТАААК, НО СДЕЛАЛ, ЧТОБЫ БЫЛО ТОЧНЕЕ
+  var seconds = timeDiff;
   console.log(seconds + " seconds");
   console.log(table);
 
@@ -124,7 +125,8 @@ function BtoRend () {
   timeDiff /= 1000;
 
   // get seconds 
-  var seconds = Math.round(timeDiff);
+  // var seconds = Math.round(timeDiff);
+  var seconds = timeDiff;
   // console.log(seconds + " seconds");
   timePerStep.push(seconds);
 }
@@ -140,7 +142,8 @@ function RtoBend () {
   timeDiff /= 1000;
 
   // get seconds 
-  var seconds = Math.round(timeDiff);
+  // var seconds = Math.round(timeDiff);
+  var seconds = timeDiff;
   // console.log(seconds + " seconds");
   timePerStep.push(seconds);
 }
